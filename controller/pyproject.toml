@@ -20,3 +20,6 @@
 
 [tool.pdm.build]
     package-dir = "src"
+
+[tool.pdm.scripts]
+    controller = {call = "integrated_stepper_controller.controller:main"}

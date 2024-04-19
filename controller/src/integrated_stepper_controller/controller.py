@@ -1,5 +1,6 @@
 import ctypes
 import logging
+import sys
 import time
 
 import can
@@ -63,12 +64,15 @@ class Controller(can.Listener):
 
                 self.next_bus_id += 1
 
-def main(*args: str) -> None:
-    if len(args) != 3:
-        log.error('usage: %s CAN_IFACE BPS')
+invocation = 'controller'
 
-    channel = args[1]
-    bitrate = int(args[2])
+def main() -> None:
+    if len(sys.argv) != 3:
+        print(f'usage: {invocation} CAN_IFACE BPS')
+        sys.exit(1)
+
+    channel = sys.argv[1]
+    bitrate = int(sys.argv[2])
 
     # sudo ip link set can0 up type can bitrate 1000000
     log.debug('attempting connection to SocketCAN interface %s at %s bps',
