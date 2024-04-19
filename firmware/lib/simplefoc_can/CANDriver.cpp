@@ -134,7 +134,7 @@ void CANDriver::receive() {
                 data[3] == uniqueId[3] && data[4] == uniqueId[4] && data[5] == uniqueId[5])
                 nodeId = busID;
             else
-                return;
+                return; /* TODO why is this return not unconditional???  */
         }
 
         // Don't continue if the message is not for us
@@ -193,10 +193,10 @@ void CANDriver::adminTasks() {
     if(nodeId == 0 && millis() > lastAdminTime + busIdRequestInterval) {
         lastAdminTime = millis();
         
-        uint32_t id = 0x08F10000;
-        uint8_t data[] = {0,0,0,0,0,0,0,0};
+        uint32_t id = 0x08f10000;
+        uint8_t data[] = {0};
         memcpy(data, uniqueId, 6);
-        memcpy(data+6, versionId, 2);
+        memcpy(data + 6, versionId, 2);
         printf("--- Transmitting CAN Frame with ID: %d ---\n", id);
         // hardware specific call
         _transmitCAN(id, data, 8);

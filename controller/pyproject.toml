@@ -1,0 +1,22 @@
+[project]
+    name = "integrated-stepper-controller"
+    version = "0.1.0"
+    description = "iykyk"
+    authors = [
+        {name = "Jorian Bruslind"},
+        {name = "Noah Hoffman"},
+        {name = "Oliver Emery"}
+    ]
+    dependencies = [
+        "python-can>=4.3.1",
+    ]
+    requires-python = ">=3.8"
+    readme = "README.md"
+    license = {text = "UNLICENSED"}
+
+[build-system]
+    requires = ["pdm-backend"]
+    build-backend = "pdm.backend"
+
+[tool.pdm.build]
+    package-dir = "src"
