@@ -1,4 +1,4 @@
-23126713297054295
+23189684359651152
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -87184,6 +87184,237 @@ rotary encoder
 0
 7
 6
+SamacSys_Parts
+3034
+3034
+Undefined or Miscellaneous
+0
+3
+3
+SamacSys_Parts
+150505M173300
+150505M173300-9
+LED
+0
+6
+6
+SamacSys_Parts
+ASFL1
+ASFL1
+Crystal or Oscillator
+0
+4
+4
+SamacSys_Parts
+BGA8C40P2X4_86X176X50
+YBG0008_2023
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+CAPC1005X55N
+0402
+Capacitor
+0
+2
+2
+SamacSys_Parts
+CAPC1608X90N
+0603
+Capacitor
+0
+2
+2
+SamacSys_Parts
+CAPPRD350W65D800H1650
+8*15
+Capacitor Polarised
+0
+2
+2
+SamacSys_Parts
+DFE2HCAH1R0MJ0L
+1008 (2520) T=1.2mm
+Inductor
+0
+2
+2
+SamacSys_Parts
+INDPM6965X300N
+IHLP2525 (3 Height)
+Inductor
+0
+2
+2
+SamacSys_Parts
+LQG15WH0N7B02D
+
+Inductor
+0
+2
+2
+SamacSys_Parts
+NE555DR
+D (R-PDSO-G8)
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+PMEG2020EPK315
+PMEG2020EPK,315-5
+Schottky Diode
+0
+2
+2
+SamacSys_Parts
+PMEG6020ER115
+PMEG6020ER,115-1
+Schottky Diode
+0
+2
+2
+SamacSys_Parts
+PTS815SJG250SMTRLFS
+PTS815 SJG 250 SMTR LFS-1
+Switch
+0
+4
+4
+SamacSys_Parts
+PTS815SJM250SMTRLFS
+PTS815 SJM 250 SMTR LFS-2
+Switch
+0
+4
+4
+SamacSys_Parts
+QFN50P500X500X90-33N-D
+32-pin QFN
+Integrated Circuit
+0
+33
+33
+SamacSys_Parts
+RESC1608X55N
+RMCF0603
+Resistor
+0
+2
+2
+SamacSys_Parts
+RH1002500012F1010TR
+RH100-25.000-12-F-1010-TR-1
+Crystal or Oscillator
+0
+4
+4
+SamacSys_Parts
+SOIC127P600X170-9N
+DDA (PDSO-G8)
+Integrated Circuit
+0
+9
+9
+SamacSys_Parts
+SOIC127P600X175-8N
+D (R-PDSO-G8)
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+SOIC127P844X265-8N
+218-4LPST
+Switch
+0
+8
+8
+SamacSys_Parts
+SOP65P640X120-15N
+pwp (r-pdso-g14)
+Integrated Circuit
+0
+15
+15
+SamacSys_Parts
+SOP65P640X120-29N
+PWP0028C_
+Integrated Circuit
+0
+29
+29
+SamacSys_Parts
+SOP100P600X180-11N
+ESSOP10 (5*3.9mm)
+Integrated Circuit
+0
+11
+11
+SamacSys_Parts
+SOP254P700X230-4N
+SPECIAL SOP4
+Relay or Contactor
+0
+4
+4
+SamacSys_Parts
+SOT95P230X110-3N
+Plastic surface-mounted package; 3 leads SOT23
+MOSFET (N-Channel)
+0
+3
+3
+SamacSys_Parts
+SOT95P240X115-3N
+SOT-23_2
+Transistor BJT NPN
+0
+3
+3
+SamacSys_Parts
+SOT95P270X145-5N
+(OT) [SOT-23]
+Integrated Circuit
+0
+5
+5
+SamacSys_Parts
+SOT95P280X110-6N
+DDC0006A
+Integrated Circuit
+0
+6
+6
+SamacSys_Parts
+SOT95P280X120-6N
+SOT23-6L
+Integrated Circuit
+0
+6
+6
+SamacSys_Parts
+SOT127P600X175-8N
+soic d
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+SOTFL50P160X60-8N
+DRL0008A
+Undefined or Miscellaneous
+0
+8
+8
+SamacSys_Parts
+XT30PWF
+XT30PW-F-2
+Connector
+0
+4
+4
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
@@ -94737,6 +94968,34 @@ Varistor VF
 0
 2
 2
+easyeda2kicad
+AUDIO-SMD_PJ-327C-4A
+
+
+0
+6
+4
+easyeda2kicad
+CONN-TH_P5.08_KF128-5.08-2P
+
+
+0
+2
+2
+easyeda2kicad
+IND-SMD_L7.2-W6.6_GPSR07X0
+
+
+0
+2
+2
+easyeda2kicad
+RJ45-TH_KH-RJ45-58-8P8C
+
+
+0
+12
+10
 easyeda2kicad
 USB-C-SMD_TYPE-C-USB-3
 
