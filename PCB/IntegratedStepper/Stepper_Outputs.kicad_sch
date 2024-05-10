@@ -633,16 +633,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 118.11 59.69 0)
+		(at 118.11 62.23 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1309b2eb-a867-47eb-9cdd-f3c9f76a73c4")
+		(uuid "1a66929b-7394-48ab-8a6a-81ed3c29fe43")
 		(property "Reference" "J4"
-			(at 120.65 59.6899 0)
+			(at 120.65 62.2301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -651,7 +651,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 120.65 62.2299 0)
+			(at 120.65 59.6901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -660,7 +660,7 @@
 			)
 		)
 		(property "Footprint" "easyeda2kicad:CONN-TH_P5.08_KF128-5.08-2P"
-			(at 118.11 59.69 0)
+			(at 118.11 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -669,7 +669,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 59.69 0)
+			(at 118.11 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -678,7 +678,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 118.11 59.69 0)
+			(at 118.11 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -687,7 +687,7 @@
 			)
 		)
 		(property "LCSC" "C474952"
-			(at 118.11 59.69 0)
+			(at 118.11 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -696,7 +696,7 @@
 			)
 		)
 		(property "LCSC Part" "C474952"
-			(at 118.11 59.69 0)
+			(at 118.11 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -705,7 +705,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C474952"
-			(at 118.11 59.69 0)
+			(at 118.11 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -714,10 +714,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "191ffad6-b1a8-408e-bc60-16881b227c22")
+			(uuid "4b6a6dd9-5d63-4ffa-8b5d-48fbf722b927")
 		)
 		(pin "1"
-			(uuid "1688ad6e-4636-407b-98d5-69706533f5f6")
+			(uuid "1d46d93a-1e1e-4c76-b3d9-7d22d239469a")
 		)
 		(instances
 			(project "IntegratedStepper"
@@ -1001,6 +1001,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 118.11 55.88 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6e0bfbd2-5fca-4000-89c4-e86216f7237d")
+		(property "Reference" "J3"
+			(at 120.65 55.8801 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 120.65 53.3401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:CONN-TH_P5.08_KF128-5.08-2P"
+			(at 118.11 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 118.11 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C474952"
+			(at 118.11 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C474952"
+			(at 118.11 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C474952"
+			(at 118.11 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "72d98c9f-8ef0-4734-b4b5-393419dcf302")
+		)
+		(pin "1"
+			(uuid "c17ebb4a-92f8-40e3-90ea-4030ea9d6c0d")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767/43bbe4fd-5a99-4112-a855-d9b549a4340b"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 158.75 40.64 0)
 		(unit 1)
@@ -1061,103 +1158,6 @@
 			(project "IntegratedStepper"
 				(path "/ab592993-dafc-411a-b466-8e8425f43767/43bbe4fd-5a99-4112-a855-d9b549a4340b"
 					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 118.11 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f0635f96-08c9-4af0-8000-be4cd4f5f347")
-		(property "Reference" "J3"
-			(at 120.65 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 120.65 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:CONN-TH_P5.08_KF128-5.08-2P"
-			(at 118.11 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 118.11 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 118.11 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C474952"
-			(at 118.11 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C474952"
-			(at 118.11 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" "C474952"
-			(at 118.11 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c5f98c19-9fa9-4738-aa66-28d73f434648")
-		)
-		(pin "1"
-			(uuid "f392e0e0-5707-4927-8210-a71eb35bd4dd")
-		)
-		(instances
-			(project "IntegratedStepper"
-				(path "/ab592993-dafc-411a-b466-8e8425f43767/43bbe4fd-5a99-4112-a855-d9b549a4340b"
-					(reference "J3")
 					(unit 1)
 				)
 			)
