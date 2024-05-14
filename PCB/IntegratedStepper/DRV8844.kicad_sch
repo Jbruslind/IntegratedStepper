@@ -1283,12 +1283,6 @@
 		(uuid "2598cbb3-80b0-439c-bfdc-7dd149153890")
 	)
 	(junction
-		(at 92.71 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "28a4301d-6452-49a7-96c9-fb0ba8025a8e")
-	)
-	(junction
 		(at 189.23 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1383,12 +1377,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d902272e-6527-477f-b1f7-021c95e3fb63")
-	)
-	(junction
-		(at 81.28 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc013abf-dad2-4680-975b-7cde7f346855")
 	)
 	(junction
 		(at 187.96 85.09)
@@ -1604,7 +1592,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 29.21) (xy 92.71 29.21)
+			(xy 76.2 29.21) (xy 92.71 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2234,16 +2222,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 36.83) (xy 92.71 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc28842b-7585-47c8-8f08-543e98c1c142")
-	)
-	(wire
-		(pts
 			(xy 86.36 80.01) (xy 83.82 80.01)
 		)
 		(stroke
@@ -2351,16 +2329,6 @@
 			(type default)
 		)
 		(uuid "f5f7673d-bd11-4c6b-ad6c-759441551d87")
-	)
-	(wire
-		(pts
-			(xy 76.2 29.21) (xy 81.28 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f94ae2b9-a74c-4d86-99be-f634e96c40b8")
 	)
 	(wire
 		(pts
@@ -5202,103 +5170,6 @@
 			(project "IntegratedStepper"
 				(path "/ab592993-dafc-411a-b466-8e8425f43767/629c76d2-6f66-4ca5-9833-9cfbfc13e6ac"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 81.28 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c970c3e6-67c8-4ed6-adff-069eec9ab9a0")
-		(property "Reference" "C22"
-			(at 85.09 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF"
-			(at 85.09 34.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
-			(at 82.2452 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 81.28 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage Rating" "100V"
-			(at 81.28 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2929200"
-			(at 81.28 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" "C2929200"
-			(at 81.28 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "23165d19-7b51-4bd4-aef8-372b887b662b")
-		)
-		(pin "2"
-			(uuid "0512da59-21b2-4251-8478-397c77cc824b")
-		)
-		(instances
-			(project "IntegratedStepper"
-				(path "/ab592993-dafc-411a-b466-8e8425f43767/629c76d2-6f66-4ca5-9833-9cfbfc13e6ac"
-					(reference "C22")
 					(unit 1)
 				)
 			)
