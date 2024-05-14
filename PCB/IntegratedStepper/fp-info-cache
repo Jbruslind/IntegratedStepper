@@ -1,4 +1,4 @@
-23189684359651152
+23191417247073385
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -87241,6 +87241,13 @@ Inductor
 2
 2
 SamacSys_Parts
+DRV8243HQRXYRQ1
+RXY0014A_2022
+Integrated Circuit
+0
+14
+14
+SamacSys_Parts
 INDPM6965X300N
 IHLP2525 (3 Height)
 Inductor
@@ -87408,13 +87415,6 @@ Undefined or Miscellaneous
 0
 8
 8
-SamacSys_Parts
-XT30PWF
-XT30PW-F-2
-Connector
-0
-4
-4
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
@@ -94969,19 +94969,19 @@ Varistor VF
 2
 2
 easyeda2kicad
-AUDIO-SMD_PJ-327C-4A
-
-
-0
-6
-4
-easyeda2kicad
 CONN-TH_P5.08_KF128-5.08-2P
 
 
 0
 2
 2
+easyeda2kicad
+CONN-TH_XT30PW-F-1
+
+
+0
+4
+4
 easyeda2kicad
 IND-SMD_L7.2-W6.6_GPSR07X0
 
@@ -95003,3 +95003,10 @@ USB-C-SMD_TYPE-C-USB-3
 0
 31
 25
+easyeda2kicad
+USB-C_SMD-TYPE-C-31-M-12
+
+
+0
+22
+20
