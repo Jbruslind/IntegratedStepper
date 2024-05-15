@@ -1663,7 +1663,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 53.34) (xy 71.12 53.34)
+			(xy 64.77 53.34) (xy 73.66 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1815,7 +1815,7 @@
 	)
 	(hierarchical_label "V_USB"
 		(shape output)
-		(at 71.12 53.34 0)
+		(at 73.66 53.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1825,7 +1825,7 @@
 		)
 		(uuid "483812c8-41ea-49de-a2f8-d20d35f31a32")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.2089 53.34 0)
+			(at 81.7489 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
