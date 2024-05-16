@@ -2558,7 +2558,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 95.25) (xy 144.78 95.25)
+			(xy 132.08 95.25) (xy 149.86 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2585,16 +2585,6 @@
 			(type default)
 		)
 		(uuid "08484ce7-bc54-4d86-b4de-bdf099ff90ab")
-	)
-	(wire
-		(pts
-			(xy 144.78 95.25) (xy 144.78 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ea3843f-9060-4075-9d17-2f2a6f6e348b")
 	)
 	(wire
 		(pts
@@ -3148,6 +3138,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 105.41) (xy 132.08 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81b4efee-c2cc-461e-976b-7ad8752fadaf")
+	)
+	(wire
+		(pts
 			(xy 55.88 147.32) (xy 67.31 147.32)
 		)
 		(stroke
@@ -3225,16 +3225,6 @@
 			(type default)
 		)
 		(uuid "94addd4c-46fe-4017-819b-f1c861685122")
-	)
-	(wire
-		(pts
-			(xy 144.78 92.71) (xy 149.86 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9aa830c7-2410-4d91-a109-f0038aa599aa")
 	)
 	(wire
 		(pts
@@ -4312,18 +4302,6 @@
 		)
 		(uuid "1c8164cb-1773-43f0-87e5-afda6b75dd15")
 	)
-	(hierarchical_label "ENC+"
-		(shape input)
-		(at 167.64 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "257c4530-e8dc-4202-a3be-607055980889")
-	)
 	(hierarchical_label "CAN_RX"
 		(shape input)
 		(at 137.16 82.55 0)
@@ -4372,30 +4350,6 @@
 		)
 		(uuid "3c45f64a-d761-49c3-9d51-7b7e88e62538")
 	)
-	(hierarchical_label "M2_ISNS"
-		(shape input)
-		(at 149.86 87.63 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "405e0482-b58e-4f23-9134-ec167490d4f4")
-	)
-	(hierarchical_label "I2C_SCL"
-		(shape input)
-		(at 134.62 92.71 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "441e59f2-d1c3-437c-8d89-978563daee3f")
-	)
 	(hierarchical_label "M_SCLK"
 		(shape input)
 		(at 135.89 74.93 0)
@@ -4420,9 +4374,21 @@
 		)
 		(uuid "4d1a5580-d12d-489a-8f7b-43f9abe5d720")
 	)
+	(hierarchical_label "M2_ISNS"
+		(shape input)
+		(at 137.16 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "66fb77b5-be3d-4ff9-a2ab-817683ae3197")
+	)
 	(hierarchical_label "I2C_SDA"
 		(shape input)
-		(at 167.64 88.9 0)
+		(at 137.16 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4430,19 +4396,7 @@
 			)
 			(justify left)
 		)
-		(uuid "51b3e090-c4e7-4bf1-86c7-8a84a088f910")
-	)
-	(hierarchical_label "ENC-"
-		(shape input)
-		(at 167.64 91.44 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5860f321-80ca-4d64-83e1-33d39b39e50a")
+		(uuid "7e5383e0-3c6d-4088-b89d-6a0d9e023228")
 	)
 	(hierarchical_label "M1_Fault"
 		(shape input)
@@ -4456,6 +4410,18 @@
 		)
 		(uuid "8b57f905-57ec-404e-a318-f018d7a48c91")
 	)
+	(hierarchical_label "ENC_IND"
+		(shape input)
+		(at 149.86 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9442b6c2-e0dd-4a73-88b5-d7474be88ac1")
+	)
 	(hierarchical_label "USB_D+"
 		(shape input)
 		(at 203.2 71.12 180)
@@ -4467,6 +4433,18 @@
 			(justify right)
 		)
 		(uuid "958bf293-9b86-4835-9d76-5ecd04eb2b9d")
+	)
+	(hierarchical_label "M_SLEEP"
+		(shape input)
+		(at 135.89 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9646810d-dcff-4d0b-8b56-56e69aa6d67f")
 	)
 	(hierarchical_label "IN[1..4]"
 		(shape input)
@@ -4492,6 +4470,18 @@
 		)
 		(uuid "ae248005-43b6-46d5-8888-6a9736d9524a")
 	)
+	(hierarchical_label "ENC-"
+		(shape input)
+		(at 149.86 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "af33699e-6cf1-4ad7-9f17-02c9b8551eb8")
+	)
 	(hierarchical_label "VUSB"
 		(shape input)
 		(at 176.53 64.77 180)
@@ -4504,19 +4494,7 @@
 		)
 		(uuid "bd3e5cdf-ff83-4ef9-861e-2892f6aec5d2")
 	)
-	(hierarchical_label "ENC_IND"
-		(shape input)
-		(at 137.16 113.03 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c5474b52-f764-45d1-9a47-720ea8f64c79")
-	)
-	(hierarchical_label "M_SLEEP"
+	(hierarchical_label "I2C_SCL"
 		(shape input)
 		(at 134.62 90.17 0)
 		(fields_autoplaced yes)
@@ -4526,7 +4504,19 @@
 			)
 			(justify left)
 		)
-		(uuid "da50fb64-5d4f-4e9e-9799-6155c3483951")
+		(uuid "c6fa1125-7f67-4741-b1cd-0740d7b1c61b")
+	)
+	(hierarchical_label "ENC+"
+		(shape input)
+		(at 134.62 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c86b35fb-bfae-4043-8e17-c93716640ac9")
 	)
 	(hierarchical_label "M_MISO"
 		(shape input)
