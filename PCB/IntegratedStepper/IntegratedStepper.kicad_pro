@@ -226,6 +226,10 @@
           "drill": 0.2
         },
         {
+          "diameter": 0.45,
+          "drill": 0.3
+        },
+        {
           "diameter": 0.5,
           "drill": 0.3
         },
@@ -661,7 +665,7 @@
       "group_symbols": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Footprint"
+      "sort_field": "LCSC"
     },
     "connection_grid_size": 50.0,
     "drawing": {

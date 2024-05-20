@@ -947,28 +947,28 @@
 				)
 			)
 		)
-		(symbol "easyeda2kicad:PJ-35825"
+		(symbol "easyeda2kicad:SM04B-GHS-TB(LF)(SN)"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "CN"
-				(at 0 7.62 0)
+			(property "Reference" "U"
+				(at 0 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "PJ-35825"
+			(property "Value" "SM04B-GHS-TB(LF)(SN)"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "easyeda2kicad:CONN-SMD_4P-P1.25_SM04B-GHS-TB-LF-SN"
 				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "easyeda2kicad:AUDIO-SMD_PJ-35825"
-				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -976,8 +976,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
-				(at 0 0 0)
+			(property "Datasheet" "https://lcsc.com/product-detail/Connectors_JST-Sales-America_SM04B-GHS-TB-LF-SN_JST-Sales-America-SM04B-GHS-TB-LF-SN_C189895.html"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -994,7 +994,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC Part" "C2764616"
+			(property "LCSC Part" "C189895"
 				(at 0 -15.24 0)
 				(effects
 					(font
@@ -1003,10 +1003,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "PJ-35825_0_1"
+			(symbol "SM04B-GHS-TB(LF)(SN)_0_1"
 				(rectangle
-					(start -8.13 1.02)
-					(end -7.11 -3.81)
+					(start -5.08 2.54)
+					(end 7.62 -5.08)
 					(stroke
 						(width 0)
 						(type default)
@@ -1015,56 +1015,8 @@
 						(type background)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0.25 2.54) (xy -7.62 2.54) (xy -7.62 1.02)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.25 0) (xy -4.83 0) (xy -5.33 -1.02) (xy -5.84 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -5.08) (xy -2.29 -5.08) (xy -2.79 -4.06) (xy -3.3 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 0 -2.54) (xy 0 -2.54) (xy 0 -5.08) (xy -0.25 -4.57)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(pin unspecified line
-					(at 5.08 2.54 180)
+					(at -2.54 7.62 270)
 					(length 5.08)
 					(name "1"
 						(effects
@@ -1082,7 +1034,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 5.08 -5.08 180)
+					(at 0 7.62 270)
 					(length 5.08)
 					(name "2"
 						(effects
@@ -1100,7 +1052,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 5.08 -2.54 180)
+					(at 2.54 7.62 270)
 					(length 5.08)
 					(name "3"
 						(effects
@@ -1118,7 +1070,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 5.08 0 180)
+					(at 5.08 7.62 270)
 					(length 5.08)
 					(name "4"
 						(effects
@@ -1128,6 +1080,42 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 12.7 -2.54 180)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 -2.54 0)
+					(length 5.08)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1406,6 +1394,12 @@
 		(uuid "a2e2aceb-f732-4c6d-bc43-7af69ab0c169")
 	)
 	(junction
+		(at 130.81 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7068d5b-5540-4490-995d-bea5d850d4cc")
+	)
+	(junction
 		(at 205.74 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1420,6 +1414,16 @@
 			(type default)
 		)
 		(uuid "04c5527a-2835-40b1-8746-6bfc05ccd843")
+	)
+	(wire
+		(pts
+			(xy 133.35 114.3) (xy 130.81 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "156ab679-e0d0-4893-aaa6-0e5d17e72aa4")
 	)
 	(wire
 		(pts
@@ -1440,6 +1444,26 @@
 			(type default)
 		)
 		(uuid "1ba32e59-adc4-43e9-963f-0a1b25033a84")
+	)
+	(wire
+		(pts
+			(xy 146.05 124.46) (xy 146.05 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e595b7b-9c62-4b5a-8632-47621846af74")
+	)
+	(wire
+		(pts
+			(xy 119.38 124.46) (xy 119.38 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e528730-aacb-40a3-998c-9a035bbfbacd")
 	)
 	(wire
 		(pts
@@ -1483,23 +1507,13 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 130.81) (xy 153.67 130.81)
+			(xy 114.3 124.46) (xy 114.3 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "36c99cee-40f3-4b5b-8406-8bc57a7a08d0")
-	)
-	(wire
-		(pts
-			(xy 151.13 115.57) (xy 154.94 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ab8ad6c-d1a9-41e5-aae8-796865c29f3f")
+		(uuid "4c04b7b0-9f67-4596-a957-1715ab8ebdda")
 	)
 	(wire
 		(pts
@@ -1510,6 +1524,16 @@
 			(type default)
 		)
 		(uuid "4f980ee8-07ff-4a99-8bef-5940d57b2742")
+	)
+	(wire
+		(pts
+			(xy 116.84 124.46) (xy 116.84 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a138ea3-818d-440c-8f17-360a29cdfba2")
 	)
 	(wire
 		(pts
@@ -1563,6 +1587,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 114.3) (xy 129.54 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b35116f-3c49-43f2-8c7f-d625d8bb3d64")
+	)
+	(wire
+		(pts
 			(xy 177.8 111.76) (xy 180.34 111.76)
 		)
 		(stroke
@@ -1583,6 +1617,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 124.46) (xy 143.51 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "890cc21d-cc9c-4054-9af2-809b87dfe531")
+	)
+	(wire
+		(pts
 			(xy 180.34 106.68) (xy 187.96 106.68)
 		)
 		(stroke
@@ -1593,6 +1637,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 114.3) (xy 99.06 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a251314-824e-4ed7-a3bb-3f76455a3774")
+	)
+	(wire
+		(pts
 			(xy 97.79 30.48) (xy 101.6 30.48)
 		)
 		(stroke
@@ -1600,16 +1654,6 @@
 			(type default)
 		)
 		(uuid "9c149d30-c315-43b9-9e8b-075db5a0e2ab")
-	)
-	(wire
-		(pts
-			(xy 151.13 107.95) (xy 154.94 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c4831b1-7778-4752-a755-330737d383b5")
 	)
 	(wire
 		(pts
@@ -1650,6 +1694,16 @@
 			(type default)
 		)
 		(uuid "ae0ec97c-4375-45bb-8653-0dc3884b0460")
+	)
+	(wire
+		(pts
+			(xy 130.81 114.3) (xy 130.81 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "badf8fbd-28de-41d0-b1bb-eeb2225ce03c")
 	)
 	(wire
 		(pts
@@ -1703,13 +1757,23 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 123.19) (xy 153.67 123.19)
+			(xy 158.75 114.3) (xy 156.21 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f7778986-19c0-44a1-96cb-8c97b3d4fddf")
+		(uuid "ec8ddda9-40e2-4f0b-bc00-d92156c35d53")
+	)
+	(wire
+		(pts
+			(xy 140.97 124.46) (xy 140.97 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f094bc5e-16ce-410c-9af9-92dc63586214")
 	)
 	(global_label "USB_D-"
 		(shape input)
@@ -1754,18 +1818,6 @@
 				(hide yes)
 			)
 		)
-	)
-	(hierarchical_label "CANL"
-		(shape input)
-		(at 153.67 123.19 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "16ceb7c9-d278-4c64-9b3b-6ecf0a31077d")
 	)
 	(hierarchical_label "USB_D+"
 		(shape output)
@@ -1837,15 +1889,15 @@
 	)
 	(hierarchical_label "CANH"
 		(shape input)
-		(at 153.67 130.81 0)
+		(at 119.38 128.27 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "55029649-d0e9-46fb-9fc5-7abaf04641cc")
+		(uuid "730e04d7-de2e-4682-85fe-fc6a46922132")
 	)
 	(hierarchical_label "ENC_IND"
 		(shape input)
@@ -1858,6 +1910,18 @@
 			(justify right)
 		)
 		(uuid "81c6b3ad-55c3-462d-98dd-2b46d29a76e0")
+	)
+	(hierarchical_label "CANL"
+		(shape input)
+		(at 143.51 128.27 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8488fe60-aa84-4ffc-be2a-6c67ae9e77a3")
 	)
 	(hierarchical_label "VM"
 		(shape input)
@@ -1893,30 +1957,6 @@
 			)
 		)
 	)
-	(hierarchical_label "CANL"
-		(shape input)
-		(at 154.94 107.95 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b8f83e43-09e1-4302-b3e3-8e153fcffc7d")
-	)
-	(hierarchical_label "CANH"
-		(shape input)
-		(at 154.94 115.57 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bd37998e-c000-4b35-9d39-f13d2d9709b1")
-	)
 	(hierarchical_label "3V3_VCC"
 		(shape output)
 		(at 130.81 46.99 180)
@@ -1939,6 +1979,18 @@
 			)
 		)
 	)
+	(hierarchical_label "CANL"
+		(shape input)
+		(at 116.84 128.27 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cfe7b39b-e390-4ccb-97de-e383c4be1c52")
+	)
 	(hierarchical_label "USB_D-"
 		(shape output)
 		(at 71.12 60.96 0)
@@ -1960,6 +2012,18 @@
 				(hide yes)
 			)
 		)
+	)
+	(hierarchical_label "CANH"
+		(shape input)
+		(at 146.05 128.27 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e4b7dd4b-82e7-4663-8f6b-ae6cc435ce8a")
 	)
 	(hierarchical_label "V_USB"
 		(shape output)
@@ -1994,89 +2058,6 @@
 			(justify right)
 		)
 		(uuid "faf01c4d-9b6e-4a6b-8c0d-9416873b9bd7")
-	)
-	(symbol
-		(lib_id "easyeda2kicad:PJ-35825")
-		(at 144.78 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "05d56c61-3b47-455e-9069-b49ddbb78ad2")
-		(property "Reference" "CN2"
-			(at 141.985 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PJ-35825"
-			(at 141.985 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:AUDIO-SMD_PJ-35825"
-			(at 144.78 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 144.78 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C2764616"
-			(at 144.78 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "8bc16eea-80e9-494c-b5f7-87c3be97211b")
-		)
-		(pin "1"
-			(uuid "1a75f598-2b98-42f7-b1fe-a0ac871b8edc")
-		)
-		(pin "2"
-			(uuid "e2619250-bc17-4010-b412-a128fef95fa3")
-		)
-		(pin "4"
-			(uuid "58900ef3-71fa-4f83-afd3-1c36ba4fef67")
-		)
-		(instances
-			(project "IntegratedStepper"
-				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
-					(reference "CN2")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2146,6 +2127,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 158.75 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "311e77a8-ccbb-4441-b1a5-bba21e31bd50")
+		(property "Reference" "#PWR034"
+			(at 158.75 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 158.75 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0985e51-c28e-4c48-ab70-49ce29543444")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 97.79 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2205,6 +2252,97 @@
 			(project "IntegratedStepper"
 				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:SM04B-GHS-TB(LF)(SN)")
+		(at 119.38 116.84 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42d7de06-9d8b-45d8-934a-b7484e5149a3")
+		(property "Reference" "U7"
+			(at 119.3801 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SM04B-GHS-TB(LF)(SN)"
+			(at 116.8401 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:CONN-SMD_4P-P1.25_SM04B-GHS-TB-LF-SN"
+			(at 119.38 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Connectors_JST-Sales-America_SM04B-GHS-TB-LF-SN_JST-Sales-America-SM04B-GHS-TB-LF-SN_C189895.html"
+			(at 119.38 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C189895"
+			(at 119.38 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "611df95e-920c-4e06-919c-18ff4059b7b4")
+		)
+		(pin "2"
+			(uuid "dc814c43-8235-42bb-9854-6b226af9f588")
+		)
+		(pin "6"
+			(uuid "6c0f71f0-306d-4ea2-a589-e0ce85078352")
+		)
+		(pin "4"
+			(uuid "c16cab46-8c2e-4d8c-8644-fea3e1575c8a")
+		)
+		(pin "5"
+			(uuid "51ee2979-66c4-477b-8015-1d5cb077bb74")
+		)
+		(pin "3"
+			(uuid "f8531d5c-281d-4070-8b9d-33c0104002cd")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -2647,6 +2785,97 @@
 		)
 	)
 	(symbol
+		(lib_id "easyeda2kicad:SM04B-GHS-TB(LF)(SN)")
+		(at 146.05 116.84 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7206f965-54c6-442d-b9be-4794fb29c47c")
+		(property "Reference" "U6"
+			(at 146.0501 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SM04B-GHS-TB(LF)(SN)"
+			(at 143.5101 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:CONN-SMD_4P-P1.25_SM04B-GHS-TB-LF-SN"
+			(at 146.05 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Connectors_JST-Sales-America_SM04B-GHS-TB-LF-SN_JST-Sales-America-SM04B-GHS-TB-LF-SN_C189895.html"
+			(at 146.05 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 146.05 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C189895"
+			(at 146.05 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2be8a00-3d53-4866-9df5-cf3c942875ea")
+		)
+		(pin "2"
+			(uuid "db182159-dcae-41cd-856d-fe438f8f9039")
+		)
+		(pin "6"
+			(uuid "8e233961-91be-4311-aca8-b5b5cb7e02ce")
+		)
+		(pin "4"
+			(uuid "89c80a60-6676-4abd-be68-effbf42e75b2")
+		)
+		(pin "5"
+			(uuid "157eaa84-c4c8-44c2-9b0f-03bd03f34733")
+		)
+		(pin "3"
+			(uuid "acf31914-df4c-4208-99f3-18d6edfa6b1f")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x05_Socket")
 		(at 142.24 52.07 0)
 		(unit 1)
@@ -2726,33 +2955,34 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:PJ-35825")
-		(at 146.05 110.49 0)
+		(lib_id "power:GND")
+		(at 140.97 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8ba08033-348d-4d1d-8e92-d0fcae6f0ca1")
-		(property "Reference" "CN1"
-			(at 143.255 102.87 0)
+		(uuid "7a19dd80-1a17-4068-ac80-0e7846c0a0c8")
+		(property "Reference" "#PWR040"
+			(at 140.97 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 140.97 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "PJ-35825"
-			(at 143.255 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:AUDIO-SMD_PJ-35825"
-			(at 146.05 123.19 0)
+		(property "Footprint" ""
+			(at 140.97 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2761,7 +2991,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 110.49 0)
+			(at 140.97 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2770,39 +3000,21 @@
 			)
 		)
 		(property "Description" ""
-			(at 146.05 110.49 0)
+			(at 140.97 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "LCSC Part" "C2764616"
-			(at 146.05 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "82c5881d-c5c8-4ada-af36-2ba575a4df5e")
 		)
 		(pin "1"
-			(uuid "fe1096a5-ca8e-4c4c-8e76-e8e5123d2c2c")
-		)
-		(pin "2"
-			(uuid "70698fe1-1d64-4d55-a1c5-7e0e602c4806")
-		)
-		(pin "4"
-			(uuid "a40c0bb4-a2a1-4f94-9086-87bf2f1f024c")
+			(uuid "1ba60471-d9f9-48df-a68e-2b2e33d29943")
 		)
 		(instances
 			(project "IntegratedStepper"
 				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
-					(reference "CN1")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -3172,6 +3384,205 @@
 			(project "IntegratedStepper"
 				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef5c2701-62f4-48be-9b9c-a52debde3056")
+		(property "Reference" "#PWR036"
+			(at 99.06 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06b473f6-7c27-405b-9dd2-dda4c9fc93ea")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 130.81 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb977460-8a6a-4137-bb5c-1643c0a26ce4")
+		(property "Reference" "#PWR037"
+			(at 130.81 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 130.8101 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "32cfe6bc-371a-49fa-904f-1ae6ad8c812f")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 114.3 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fcad9406-ffd6-4d0b-8de1-3ce7be561f6c")
+		(property "Reference" "#PWR039"
+			(at 114.3 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5cbd457d-d6e0-42f0-b54e-a9a198925e55")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)

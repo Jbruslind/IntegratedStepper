@@ -963,7 +963,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "8.2k"
 			(at 166.37 99.695 0)
 			(effects
 				(font
@@ -999,7 +999,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C469659"
+		(property "LCSC" "C25981"
 			(at 163.83 97.79 0)
 			(effects
 				(font
@@ -1008,7 +1008,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C469659"
+		(property "LCSC Part" "C25981"
 			(at 163.83 97.79 0)
 			(effects
 				(font
@@ -1017,7 +1017,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C469659"
+		(property "LCSC Part Number" "C25981"
 			(at 163.83 97.79 0)
 			(effects
 				(font
@@ -1105,7 +1105,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2929200"
+		(property "LCSC" "C5186689"
 			(at 194.31 90.17 0)
 			(effects
 				(font
@@ -1114,7 +1114,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C2929200"
+		(property "LCSC Part Number" "C5186689"
 			(at 194.31 90.17 0)
 			(effects
 				(font
@@ -1123,7 +1123,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C2929200"
+		(property "LCSC Part" "C5186689"
 			(at 194.31 90.17 0)
 			(effects
 				(font
