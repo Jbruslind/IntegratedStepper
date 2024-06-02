@@ -1,5 +1,5 @@
 {
     "cmake.configureOnOpen": true,
-    "idf.portWin": "COM9",
+    "idf.portWin": "COM10",
     "cmake.sourceDirectory": "D:/test_sketches/Test-SimpleFOC_ESP32/.pio/libdeps/esp32dev/Unity"
 }
