@@ -5,7 +5,6 @@
 #define CAN_RX 17
 
 #define nSLEEP 32
-#define nOFF 2
 #define DRVOFF 2
 
 #define nFAULT_1 25
@@ -27,7 +26,7 @@ StepperDriver4PWM driver = StepperDriver4PWM(27,26,5,4);
 MagneticSensorSPI sensor = MagneticSensorSPI(AS5048_SPI, 15);
 SPIClass* hspi = new SPIClass(HSPI); 
 
-LowsideCurrentSense current_sense = LowsideCurrentSense(A_p, R_IPROP, IPROPI_1, IPROPI_2);
+// LowsideCurrentSense current_sense = LowsideCurrentSense(A_p, R_IPROP, IPROPI_1, IPROPI_2);
 
 // CANDriver can = CANDriver(CAN_TX, CAN_RX);
 // CANCommander canCommand = CANCommander(can);
@@ -83,19 +82,17 @@ void moveMotorsfun( void * pvParameters) {
   // motor.linkSensor(&sensor);
   
   
-  pinMode(nSLEEP, OUTPUT);
-  pinMode(nOFF, OUTPUT);
+  driver.setClear(nSLEEP);
+
   pinMode(DRVOFF, OUTPUT);
 
   pinMode(nFAULT_1, INPUT);
   pinMode(nFAULT_2, INPUT);
 
-  digitalWrite(nOFF, HIGH);
-  digitalWrite(DRVOFF, LOW);
+  pinMode(IPROPI_1, INPUT);
+  pinMode(IPROPI_2, INPUT);
 
-  digitalWrite(nSLEEP, LOW);
-  delayMicroseconds(30);
-  digitalWrite(nSLEEP, HIGH);
+  digitalWrite(DRVOFF, LOW);
 
   // ##################### SPI CONFIG
   sensor.init(hspi);
@@ -116,7 +113,7 @@ void moveMotorsfun( void * pvParameters) {
 
   // set control loop type to be used]
   
-  driver.pwm_frequency = 20000;
+  driver.pwm_frequency = 5000;
   driver.voltage_limit = driver.voltage_power_supply / 2;
   motor.voltage_limit = driver.voltage_power_supply / 2;
   // controller configuration based on the control type 
@@ -127,10 +124,9 @@ void moveMotorsfun( void * pvParameters) {
 
   // angle loop controller
   motor.P_angle.P = 20;
-  motor.P_angle.P = 0;
   motor.P_angle.D = 0;
   // angle loop velocity limit
-  motor.velocity_limit = 30;
+  motor.velocity_limit = 15;
 
   // use monitoring with serial for motor init
   // monitoring port
@@ -150,27 +146,39 @@ void moveMotorsfun( void * pvParameters) {
         motor.loopFOC();
     }
 }
-int monitor_downsample = motor.monitor_downsample;
+int monitor_downsample = 10000;
 int monitor_cnt = 0;
 int nfault_1 = 1;
 int nfault_2 = 1;
+float ipropi_1 = 0;
+float ipropi_2 = 0;
 
 void loop() {
   command.run();
-  motor.monitor();
+  // motor.monitor();
+  if(motor.motor_status==FOCMotorStatus::motor_recover)
+  {
+      driver.clear();
+      digitalWrite(DRVOFF, LOW);
+  }
+
   if( !monitor_downsample || monitor_cnt++ < (monitor_downsample-1) ) 
   { 
-
+      // printf("############################################# \n");
   }
   else{
     monitor_cnt = 0; 
     nfault_1 = digitalRead(nFAULT_1);
     nfault_2 = digitalRead(nFAULT_2);
-    // printf("NFAULT_1 : %d NFAULT_2 : %d \n", nfault_1 , nfault_2);
-    if(!nfault_1 || !nfault_2){
-      digitalWrite(nSLEEP, LOW);
-      delayMicroseconds(30);
-      digitalWrite(nSLEEP, HIGH);
+    ipropi_1 = analogRead(IPROPI_1);
+    ipropi_2 = analogRead(IPROPI_2);
+    printf("NFAULT_1 : %d NFAULT_2 : %d  STATUS: %i IPROP1: %f IPROP2: %f\n", nfault_1 , nfault_2, motor.motor_status,ipropi_1,ipropi_2);
+    if((!nfault_1 || !nfault_2) && motor.motor_status!=FOCMotorStatus::motor_error){
+      motor.motor_status==FOCMotorStatus::motor_error;
+      printf("FAULT!! NFAULT_1 : %d NFAULT_2 : %d \n", nfault_1 , nfault_2);
+      printf("Please enter CLEAR command to clear\n");
+      digitalWrite(DRVOFF, HIGH);
+      //motor.disable();
     }
   }
   // canCommand.runWithCAN();
