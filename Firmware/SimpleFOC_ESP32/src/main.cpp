@@ -172,7 +172,7 @@ void loop() {
     nfault_2 = digitalRead(nFAULT_2);
     ipropi_1 = analogRead(IPROPI_1);
     ipropi_2 = analogRead(IPROPI_2);
-    printf("NFAULT_1 : %d NFAULT_2 : %d  STATUS: %i IPROP1: %f IPROP2: %f\n", nfault_1 , nfault_2, motor.motor_status,ipropi_1,ipropi_2);
+    // printf("NFAULT_1 : %d NFAULT_2 : %d  STATUS: %i IPROP1: %f IPROP2: %f\n", nfault_1 , nfault_2, motor.motor_status,ipropi_1,ipropi_2);
     if((!nfault_1 || !nfault_2) && motor.motor_status!=FOCMotorStatus::motor_error){
       motor.motor_status==FOCMotorStatus::motor_error;
       printf("FAULT!! NFAULT_1 : %d NFAULT_2 : %d \n", nfault_1 , nfault_2);

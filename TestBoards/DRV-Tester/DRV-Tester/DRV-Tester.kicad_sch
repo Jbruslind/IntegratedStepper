@@ -1,0 +1,281 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "a38efaf2-f631-4fae-9db8-baf53fe35d9e")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 15.24 62.23)
+		(size 16.51 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "65a6da3d-ab5d-45b9-ade3-98df1f09408e")
+		(property "Sheetname" "Stepper_Outputs1"
+			(at 15.24 61.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Stepper_Outputs.kicad_sch"
+			(at 15.24 75.5146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "OUT[1..4]" input
+			(at 31.75 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d47403a5-1362-4844-b68f-708e16ec09e0")
+		)
+		(instances
+			(project "DRV-Tester"
+				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 15.24 85.09)
+		(size 16.51 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "69746995-a133-4aa1-9a0a-8be4c0d0a678")
+		(property "Sheetname" "Stepper_Outputs"
+			(at 15.24 84.3784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Stepper_Outputs.kicad_sch"
+			(at 15.24 98.3746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "OUT[1..4]" input
+			(at 31.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8edf04e2-7662-4e2b-8522-442b19e285ba")
+		)
+		(instances
+			(project "DRV-Tester"
+				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 52.07 83.82)
+		(size 27.94 16.51)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9bf25afe-c0be-4107-9fbf-f917095cab03")
+		(property "Sheetname" "DRV8243"
+			(at 52.07 83.1084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DRV8243.kicad_sch"
+			(at 52.07 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DRV-Tester"
+				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 90.17 48.26)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a7c9c690-8090-43ec-aaa8-e18d7aff2b27")
+		(property "Sheetname" "Input_Con"
+			(at 90.17 47.5484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Input_RJ45.kicad_sch"
+			(at 90.17 61.5446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VM" input
+			(at 90.17 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1ddd22f9-508c-4c27-9aa0-29965197f556")
+		)
+		(pin "VM-" input
+			(at 90.17 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0de08aae-0d10-462a-893e-b73fedd42e9e")
+		)
+		(instances
+			(project "DRV-Tester"
+				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 52.07 60.96)
+		(size 27.94 16.51)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c9ca17d7-f0ef-421b-b5d0-5c13b10c5fab")
+		(property "Sheetname" "DRV8244"
+			(at 52.07 60.2484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DRV8244.kicad_sch"
+			(at 52.07 78.0546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DRV-Tester"
+				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 52.07 35.56)
+		(size 27.94 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f894ddb5-9050-469b-9322-8f3c5b89aa28")
+		(property "Sheetname" "DRV8245"
+			(at 52.07 34.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DRV8245.kicad_sch"
+			(at 52.07 55.1946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DRV-Tester"
+				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
