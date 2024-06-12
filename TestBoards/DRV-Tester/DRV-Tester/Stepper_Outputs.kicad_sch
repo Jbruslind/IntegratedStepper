@@ -458,10 +458,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "f58b5039-76eb-4532-9867-23c763f82ceb")
+			(uuid "b497683e-46c6-4d10-a273-207568e5886e")
 		)
 		(pin "1"
-			(uuid "77489ede-241a-404a-bc17-cf67398e6a0a")
+			(uuid "f0f1d5d2-bf8a-4486-afa7-9e0ad36b3cda")
 		)
 		(instances
 			(project "DRV-Tester"
@@ -471,6 +471,10 @@
 				)
 				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e/65a6da3d-ab5d-45b9-ade3-98df1f09408e"
 					(reference "J3")
+					(unit 1)
+				)
+				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e/6fce963f-344a-41d8-afb4-08884e66bd5a"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -559,10 +563,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "2608ce0b-7e9d-4cb9-98e7-bae1999c9fe8")
+			(uuid "9e994478-7c87-42c9-888b-42bbb8e32eea")
 		)
 		(pin "1"
-			(uuid "d5b08995-ea40-409a-b2c3-ac15e06d76d6")
+			(uuid "11a634a2-c138-476d-9dfe-0044917a8099")
 		)
 		(instances
 			(project "DRV-Tester"
@@ -572,6 +576,10 @@
 				)
 				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e/65a6da3d-ab5d-45b9-ade3-98df1f09408e"
 					(reference "J4")
+					(unit 1)
+				)
+				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e/6fce963f-344a-41d8-afb4-08884e66bd5a"
+					(reference "J6")
 					(unit 1)
 				)
 			)

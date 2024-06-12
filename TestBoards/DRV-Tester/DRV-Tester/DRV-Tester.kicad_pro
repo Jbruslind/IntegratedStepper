@@ -600,6 +600,26 @@
     [
       "65a6da3d-ab5d-45b9-ade3-98df1f09408e",
       "Stepper_Outputs1"
+    ],
+    [
+      "6fce963f-344a-41d8-afb4-08884e66bd5a",
+      "Stepper_Outputs2"
+    ],
+    [
+      "97323246-a63b-4ba9-8e83-e2e6b5d34014",
+      "DRV1_GPIO"
+    ],
+    [
+      "d91062bd-db31-49b8-8300-3058fb4afebc",
+      "DRV1_GPIO1"
+    ],
+    [
+      "0f578a30-e239-4bae-9542-26272a6b03ce",
+      "DRV1_GPIO2"
+    ],
+    [
+      "f9b88df9-7e46-40e7-ad80-4e7f981759bf",
+      "COM_GPIO"
     ]
   ],
   "text_variables": {}

@@ -4386,7 +4386,7 @@
 		)
 		(uuid "66fb77b5-be3d-4ff9-a2ab-817683ae3197")
 	)
-	(hierarchical_label "I2C_SDA"
+	(hierarchical_label "DRV2_CS"
 		(shape input)
 		(at 137.16 110.49 0)
 		(fields_autoplaced yes)
@@ -4494,7 +4494,7 @@
 		)
 		(uuid "bd3e5cdf-ff83-4ef9-861e-2892f6aec5d2")
 	)
-	(hierarchical_label "I2C_SCL"
+	(hierarchical_label "DRV1_CS"
 		(shape input)
 		(at 134.62 90.17 0)
 		(fields_autoplaced yes)
