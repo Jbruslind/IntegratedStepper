@@ -447,23 +447,13 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 53.34) (xy 113.03 53.34)
+			(xy 105.41 62.23) (xy 114.3 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "124c8c02-e3a7-4904-9b48-ca21dcb1a983")
-	)
-	(wire
-		(pts
-			(xy 105.41 62.23) (xy 113.03 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4851e062-2359-4a45-b0fd-1d4458e5896d")
+		(uuid "517bda29-f8b5-430b-a210-825261a998da")
 	)
 	(bus
 		(pts
@@ -507,13 +497,13 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 55.88) (xy 113.03 55.88)
+			(xy 105.41 53.34) (xy 114.3 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8cbaa1cc-242b-4c63-9a7e-4624cc7ed372")
+		(uuid "88869c88-dc61-49bc-80c9-b86c01d06448")
 	)
 	(bus
 		(pts
@@ -524,6 +514,26 @@
 			(type default)
 		)
 		(uuid "a79a02a9-928e-43cf-9e93-8c10dd496ad1")
+	)
+	(wire
+		(pts
+			(xy 105.41 59.69) (xy 114.3 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7b92067-df34-4774-a5ae-b4685287fdec")
+	)
+	(wire
+		(pts
+			(xy 105.41 55.88) (xy 114.3 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1b4bb88-fb44-4a96-b696-63e13525f4f9")
 	)
 	(wire
 		(pts
@@ -564,16 +574,6 @@
 			(type default)
 		)
 		(uuid "fe043446-0ce5-48fd-851f-24eec91fe3a6")
-	)
-	(wire
-		(pts
-			(xy 105.41 59.69) (xy 113.03 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff093f17-dfbc-43ed-a258-62d6394f8070")
 	)
 	(label "OUT2"
 		(at 107.95 55.88 0)
@@ -633,8 +633,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 118.11 62.23 0)
-		(mirror x)
+		(at 119.38 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -642,7 +641,7 @@
 		(dnp no)
 		(uuid "1a66929b-7394-48ab-8a6a-81ed3c29fe43")
 		(property "Reference" "J4"
-			(at 120.65 62.2301 0)
+			(at 121.92 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -651,7 +650,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 120.65 59.6901 0)
+			(at 121.92 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -660,7 +659,7 @@
 			)
 		)
 		(property "Footprint" "easyeda2kicad:CONN-TH_P5.08_KF128-5.08-2P"
-			(at 118.11 62.23 0)
+			(at 119.38 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -669,7 +668,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 62.23 0)
+			(at 119.38 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -678,7 +677,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 118.11 62.23 0)
+			(at 119.38 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -687,7 +686,7 @@
 			)
 		)
 		(property "LCSC" "C474952"
-			(at 118.11 62.23 0)
+			(at 119.38 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -696,7 +695,7 @@
 			)
 		)
 		(property "LCSC Part" "C474952"
-			(at 118.11 62.23 0)
+			(at 119.38 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -705,7 +704,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C474952"
-			(at 118.11 62.23 0)
+			(at 119.38 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1002,8 +1001,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 118.11 55.88 0)
-		(mirror x)
+		(at 119.38 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1011,7 +1009,7 @@
 		(dnp no)
 		(uuid "6e0bfbd2-5fca-4000-89c4-e86216f7237d")
 		(property "Reference" "J3"
-			(at 120.65 55.8801 0)
+			(at 121.92 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1020,7 +1018,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 120.65 53.3401 0)
+			(at 121.92 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1029,7 +1027,7 @@
 			)
 		)
 		(property "Footprint" "easyeda2kicad:CONN-TH_P5.08_KF128-5.08-2P"
-			(at 118.11 55.88 0)
+			(at 119.38 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1038,7 +1036,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 55.88 0)
+			(at 119.38 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1047,7 +1045,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 118.11 55.88 0)
+			(at 119.38 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1056,7 +1054,7 @@
 			)
 		)
 		(property "LCSC" "C474952"
-			(at 118.11 55.88 0)
+			(at 119.38 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1065,7 +1063,7 @@
 			)
 		)
 		(property "LCSC Part" "C474952"
-			(at 118.11 55.88 0)
+			(at 119.38 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1074,7 +1072,7 @@
 			)
 		)
 		(property "LCSC Part Number" "C474952"
-			(at 118.11 55.88 0)
+			(at 119.38 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)

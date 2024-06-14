@@ -2858,7 +2858,7 @@
 			)
 		)
 	)
-	(global_label "IPROPI_2"
+	(global_label "IPROPI_1"
 		(shape input)
 		(at 166.37 81.28 0)
 		(fields_autoplaced yes)
