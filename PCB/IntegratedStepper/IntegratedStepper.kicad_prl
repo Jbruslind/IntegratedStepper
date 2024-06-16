@@ -19,13 +19,13 @@
       "footprints": true,
       "graphics": false,
       "keepouts": false,
-      "lockedItems": true,
+      "lockedItems": false,
       "otherItems": false,
       "pads": false,
       "text": false,
       "tracks": true,
       "vias": true,
-      "zones": false
+      "zones": true
     },
     "visible_items": [
       0,
@@ -64,7 +64,7 @@
       39,
       40
     ],
-    "visible_layers": "000a020_80000001",
+    "visible_layers": "0002000_80000007",
     "zone_display_mode": 0
   },
   "git": {
