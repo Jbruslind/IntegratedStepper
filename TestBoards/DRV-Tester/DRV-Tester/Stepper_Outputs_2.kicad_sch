@@ -229,6 +229,16 @@
 		)
 		(uuid "e609abbe-ebb6-4c5f-ba15-d2897269d9d1")
 	)
+	(wire
+		(pts
+			(xy 77.47 76.2) (xy 85.09 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "024cdb57-6118-47d8-978d-a0e1374e3a3f")
+	)
 	(bus
 		(pts
 			(xy 74.93 71.12) (xy 74.93 73.66)
@@ -249,26 +259,6 @@
 		)
 		(uuid "262371e9-65ba-4d67-a469-9f5646e98fdb")
 	)
-	(wire
-		(pts
-			(xy 77.47 67.31) (xy 85.09 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30301ae4-ac30-4725-a922-a01c486ef399")
-	)
-	(wire
-		(pts
-			(xy 77.47 69.85) (xy 85.09 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "392e61ac-31a8-4d45-af6f-0b723f20de22")
-	)
 	(bus
 		(pts
 			(xy 74.93 73.66) (xy 74.93 77.47)
@@ -278,6 +268,26 @@
 			(type default)
 		)
 		(uuid "5f059378-8903-4c83-b447-882888dd5e61")
+	)
+	(wire
+		(pts
+			(xy 77.47 73.66) (xy 85.09 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83e35009-0ce6-416c-9417-01ff9757a485")
+	)
+	(wire
+		(pts
+			(xy 77.47 67.31) (xy 85.09 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96dba295-cfd5-4eaf-ae9d-3bf4ee8151c8")
 	)
 	(bus
 		(pts
@@ -291,23 +301,13 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 73.66) (xy 85.09 73.66)
+			(xy 77.47 69.85) (xy 85.09 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bc9ed308-8a6a-4164-a815-1a1ab1dcfc5d")
-	)
-	(wire
-		(pts
-			(xy 77.47 76.2) (xy 85.09 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f728963b-8408-4428-8aad-474ba2c8b398")
+		(uuid "ab28bb4b-8160-4f68-8876-c580673b84df")
 	)
 	(bus
 		(pts
@@ -464,104 +464,16 @@
 		)
 		(instances
 			(project "DRV-Tester"
-				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e/6fce963f-344a-41d8-afb4-08884e66bd5a"
-					(reference "J5")
+				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e/65a6da3d-ab5d-45b9-ade3-98df1f09408e"
+					(reference "J3")
 					(unit 1)
 				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 90.17 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c6c3e64a-28b0-453b-a59f-0b86d3067892")
-		(property "Reference" "J6"
-			(at 92.71 73.6599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e/69746995-a133-4aa1-9a0a-8be4c0d0a678"
+					(reference "J1")
+					(unit 1)
 				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 92.71 76.1999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:CONN-TH_P5.08_KF128-5.08-2P"
-			(at 90.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 90.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 90.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C474952"
-			(at 90.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C474952"
-			(at 90.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" "C474952"
-			(at 90.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9e994478-7c87-42c9-888b-42bbb8e32eea")
-		)
-		(pin "1"
-			(uuid "11a634a2-c138-476d-9dfe-0044917a8099")
-		)
-		(instances
-			(project "DRV-Tester"
 				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e/6fce963f-344a-41d8-afb4-08884e66bd5a"
-					(reference "J6")
+					(reference "J5")
 					(unit 1)
 				)
 			)

@@ -427,6 +427,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 99.06) (xy 137.16 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2115d815-34d6-4810-ad32-8ce9a035d460")
+	)
+	(wire
+		(pts
 			(xy 120.65 104.14) (xy 124.46 104.14)
 		)
 		(stroke
@@ -507,6 +517,26 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 101.6) (xy 137.16 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90b47382-4bcb-49b5-9b80-ad3278de759d")
+	)
+	(wire
+		(pts
+			(xy 140.97 104.14) (xy 137.16 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c023db62-0ff3-491a-a8ca-ef94cff36d2e")
+	)
+	(wire
+		(pts
 			(xy 137.16 87.63) (xy 140.97 87.63)
 		)
 		(stroke
@@ -575,6 +605,30 @@
 		)
 		(uuid "7cbfd3a2-ac73-4294-ba66-f66d37a1c09e")
 	)
+	(hierarchical_label "DRV5_CS"
+		(shape input)
+		(at 140.97 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "894c58a2-48d7-43e6-9048-a4c4acb2bbf6")
+	)
+	(hierarchical_label "DRV6_CS"
+		(shape input)
+		(at 140.97 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "98a7c903-0bf5-4ab8-b44a-857405031544")
+	)
 	(hierarchical_label "DRV2_CS"
 		(shape input)
 		(at 120.65 101.6 180)
@@ -586,6 +640,18 @@
 			(justify right)
 		)
 		(uuid "d12c1f54-9fe7-47b1-9416-053ffbdd39e4")
+	)
+	(hierarchical_label "DRV4_CS"
+		(shape input)
+		(at 140.97 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d2ce8e92-cb31-40f4-89df-d22178f134ea")
 	)
 	(hierarchical_label "M_MISO"
 		(shape input)
