@@ -384,7 +384,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "80d3119d-2ae6-4435-90c4-71b5e04679d2")
-		(property "Reference" "J5"
+		(property "Reference" "J3"
 			(at 92.71 67.3099 0)
 			(effects
 				(font
@@ -470,10 +470,6 @@
 				)
 				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e/69746995-a133-4aa1-9a0a-8be4c0d0a678"
 					(reference "J1")
-					(unit 1)
-				)
-				(path "/a38efaf2-f631-4fae-9db8-baf53fe35d9e/6fce963f-344a-41d8-afb4-08884e66bd5a"
-					(reference "J5")
 					(unit 1)
 				)
 			)
