@@ -13,8 +13,6 @@ class StepperDriver{
         /** Disable hardware */
         virtual void disable() = 0;
 
-        /** Motor driver clear faults function */
-        virtual void clear()=0;
 
         long pwm_frequency; //!< pwm frequency value in hertz
         float voltage_power_supply; //!< power supply voltage 
