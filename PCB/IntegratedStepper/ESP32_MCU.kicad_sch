@@ -4290,18 +4290,6 @@
 			)
 		)
 	)
-	(hierarchical_label "DRV1_CS"
-		(shape input)
-		(at 137.16 110.49 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "14f45a5b-0ab6-4578-aa53-57bfb6fbe64b")
-	)
 	(hierarchical_label "DRV2_CS"
 		(shape input)
 		(at 134.62 90.17 0)
@@ -4386,18 +4374,6 @@
 		)
 		(uuid "47f32e45-07eb-447c-8e43-94de468c2095")
 	)
-	(hierarchical_label "M1_ISNS"
-		(shape input)
-		(at 135.89 107.95 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4d1a5580-d12d-489a-8f7b-43f9abe5d720")
-	)
 	(hierarchical_label "M2_ISNS"
 		(shape input)
 		(at 137.16 113.03 0)
@@ -4457,6 +4433,18 @@
 			(justify left)
 		)
 		(uuid "9646810d-dcff-4d0b-8b56-56e69aa6d67f")
+	)
+	(hierarchical_label "DRV1_CS"
+		(shape input)
+		(at 135.89 107.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a3197417-752a-47fe-9cae-d4c6bc3b22e2")
 	)
 	(hierarchical_label "IN[1..4]"
 		(shape input)
@@ -4553,6 +4541,18 @@
 			(justify left)
 		)
 		(uuid "f564b60a-a2ac-4534-a511-823a030a828a")
+	)
+	(hierarchical_label "M1_ISNS"
+		(shape input)
+		(at 137.16 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fc1cb3d9-881a-45c4-b98c-ceef8b10115b")
 	)
 	(symbol
 		(lib_id "power:GND")
