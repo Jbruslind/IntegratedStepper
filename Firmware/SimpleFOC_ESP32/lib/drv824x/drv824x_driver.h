@@ -68,8 +68,10 @@ class DRV824X_2PH
       @param nCS CS pin for Driver
     */
    DRV824X_2PH();
-   DRV824X_2PH(int ph1A,int ph1B, int en = NOT_SET, int nsleep = NOT_SET, int nCS = NOT_SET,
-    SPISettings settings = DRV824xSPISettings);
+   DRV824X_2PH(int ph1A, int ph1B, int en = NOT_SET, int nsleep = NOT_SET, int nCS = NOT_SET,
+    SPISettings settings = DRV824xSPISettings, SPIClass* _spi = &SPI);
+    DRV824X_2PH(int ph1A, int ph1B, int nCS,
+    SPISettings settings = DRV824xSPISettings, SPIClass* _spi = &SPI);
 
     int pwm1A; //!< phase 1A pwm pin number
   	int pwm1B; //!< phase 1B pwm pin number
@@ -78,10 +80,16 @@ class DRV824X_2PH
     int cs;
 
     byte getDeviceID(); // return dev id from IC
+    byte getFault(); // return fault reg from IC
     DRV824xFault getFaultSummary(uint8_t status); // return fault summary from device
 
     DRV824xResult getStatus1(); 
-    DRV824xResult getStatus2(); 
+    DRV824xResult getStatus2();
+
+    DRV824xResult getConfig1();
+    DRV824xResult getConfig2(); 
+    DRV824xResult getConfig3(); 
+    DRV824xResult getConfig4();  
 
     void setCommand(uint8_t command); 
     void setSPIin(uint8_t spiIn);
@@ -108,7 +116,7 @@ class DRV824X_2PH
     SPIClass* spi;
     SPISettings spisettings;
     bool errorflag = false;
-    int nCS = -1;
+    // int nCS = -1;
 };
 
 class DRV824X_4PH: public StepperDriver
