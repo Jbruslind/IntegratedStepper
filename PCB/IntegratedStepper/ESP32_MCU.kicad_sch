@@ -2658,16 +2658,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 107.95) (xy 135.89 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "269bd5a2-cf4a-4bbd-87a5-0847946edb28")
-	)
-	(wire
-		(pts
 			(xy 149.86 77.47) (xy 153.67 77.47)
 		)
 		(stroke
@@ -3528,13 +3518,13 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 110.49) (xy 137.16 110.49)
+			(xy 132.08 110.49) (xy 135.89 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e2b0e1fe-d506-4079-bed3-4bb1cc676bf7")
+		(uuid "d518be82-d3cd-4b1a-b3bd-2a2ef17d62b1")
 	)
 	(wire
 		(pts
@@ -3635,6 +3625,16 @@
 			(type default)
 		)
 		(uuid "f12c68ea-e64c-4823-979e-abe0b8a0651a")
+	)
+	(wire
+		(pts
+			(xy 132.08 107.95) (xy 137.16 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2efbf17-7681-4485-8021-f983fb629e7a")
 	)
 	(wire
 		(pts
@@ -4292,7 +4292,7 @@
 	)
 	(hierarchical_label "DRV1_CS"
 		(shape input)
-		(at 137.16 110.49 0)
+		(at 137.16 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4385,18 +4385,6 @@
 			(justify left)
 		)
 		(uuid "47f32e45-07eb-447c-8e43-94de468c2095")
-	)
-	(hierarchical_label "M1_ISNS"
-		(shape input)
-		(at 135.89 107.95 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4d1a5580-d12d-489a-8f7b-43f9abe5d720")
 	)
 	(hierarchical_label "M2_ISNS"
 		(shape input)
@@ -4493,6 +4481,18 @@
 			(justify left)
 		)
 		(uuid "af33699e-6cf1-4ad7-9f17-02c9b8551eb8")
+	)
+	(hierarchical_label "M1_ISNS"
+		(shape input)
+		(at 135.89 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b5a8bf7c-2425-4176-a09f-4ec3ba713230")
 	)
 	(hierarchical_label "VUSB"
 		(shape input)

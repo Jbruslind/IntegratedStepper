@@ -162,9 +162,9 @@ int DRV824X_2PH::init() {
     // Reset Faults and Unlock registers
     setCommand(0b10010000);
     // Config 2 sets ITRIP and Diag behavior
-    setConfig2(0b01100101);
+    setConfig2(0b01100111);
     // Config 3 sets Slew rate and Mode
-    setConfig3(0b00001011);
+    setConfig3(0b00011101);
     // // Config 4 sets tOCP and iOCP
     // setConfig4(0b11000000);
     // Enable drivers 

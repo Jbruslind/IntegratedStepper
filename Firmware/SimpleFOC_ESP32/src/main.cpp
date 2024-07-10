@@ -107,9 +107,6 @@ void moveMotorsfun( void * pvParameters) {
   // power supply voltage [V]
   driver.voltage_power_supply = 19;
   // motor.motion_downsample = 2;
-  // printf("Driver1: %x \n", driver.driver1.getDeviceID());
-  // printf("Driver1 fault: %x \n", driver.driver1.getFault());
-  // printf("Driver1 config1: %x \n", driver.driver1.getConfig1().data);
   // printf("Driver1 config2: %x \n", driver.driver1.getConfig2().data);
   // printf("Driver1 config3: %x \n", driver.driver1.getConfig3().data);
   // printf("Driver1 config4: %x \n", driver.driver1.getConfig4().data);
@@ -121,7 +118,7 @@ void moveMotorsfun( void * pvParameters) {
 
   // set control loop type to be used]
   
-  // driver.pwm_frequency = 5000;
+  driver.pwm_frequency = 20000;
   driver.voltage_limit = driver.voltage_power_supply / 2;
   motor.voltage_limit = driver.voltage_power_supply / 2;
   
@@ -136,7 +133,7 @@ void moveMotorsfun( void * pvParameters) {
   motor.P_angle.D = 0;
   // angle loop velocity limit
   motor.velocity_limit = 5;
-  motor.current_limit = 5;
+  motor.current_limit = 4;
   motor.phase_resistance = 0.9;
   motor.phase_inductance = 0.00280;
   
@@ -157,6 +154,10 @@ void moveMotorsfun( void * pvParameters) {
   printf("Driver2: %x \n", driver.driver2.getDeviceID());
   printf("Driver2 fault: %x \n", driver.driver2.getFault());
   printf("Driver2 config1: %x \n", driver.driver2.getConfig1().data);
+
+  printf("Driver1: %x \n", driver.driver1.getDeviceID());
+  printf("Driver1 fault: %x \n", driver.driver1.getFault());
+  printf("Driver1 config1: %x \n", driver.driver1.getConfig1().data);
 
     for(;;){
         //This function keeps motors spinning and must be run as fast as possible
