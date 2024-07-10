@@ -1,4 +1,5 @@
 #include <SimpleFOC.h>
+#include <drv824x_driver.h>
 // #include <SimpleFOCCAN.h>
 
 #define CAN_TX 16
@@ -20,11 +21,17 @@ TaskHandle_t moveMotors;
 void moveMotorsfun( void * pvParameters);
 // Stepper motor instance
 StepperMotor motor = StepperMotor(50);
-// Stepper driver instance
-StepperDriver4PWM driver = StepperDriver4PWM(27,26,5,4);
-
-MagneticSensorSPI sensor = MagneticSensorSPI(AS5048_SPI, 15);
 SPIClass* hspi = new SPIClass(HSPI); 
+// Stepper driver instance
+// DRV824X_2PH(int ph1A,int ph1B, int en = NOT_SET, int nsleep = NOT_SET, int nCS = NOT_SET,
+//     SPISettings settings = DRV824xSPISettings, SPIClass* _spi = &SPI);
+DRV824X_2PH driver_1 = DRV824X_2PH(26, 27, 33, DRV824xSPISettings, hspi);
+DRV824X_2PH driver_2 = DRV824X_2PH(4, 5, 21, DRV824xSPISettings, hspi);
+
+
+DRV824X_4PH driver = DRV824X_4PH(driver_1, driver_2);
+MagneticSensorSPI sensor = MagneticSensorSPI(AS5048_SPI, 15);
+
 
 // LowsideCurrentSense current_sense = LowsideCurrentSense(A_p, R_IPROP, IPROPI_1, IPROPI_2);
 
@@ -39,6 +46,12 @@ void setup() {
   Serial.begin(115200);
   Serial.print("RUNNING ON CORE: ");
   Serial.println(xPortGetCoreID());
+
+  pinMode(nSLEEP, OUTPUT);
+  pinMode(DRVOFF, OUTPUT);
+
+  digitalWrite(nSLEEP, HIGH);
+  digitalWrite(DRVOFF, LOW);
 
   disableCore0WDT();
   xTaskCreatePinnedToCore(
@@ -80,19 +93,6 @@ void moveMotorsfun( void * pvParameters) {
   // ##################### I2C CONFIG
   // sensor.init();
   // motor.linkSensor(&sensor);
-  
-  
-  driver.setClear(nSLEEP);
-
-  pinMode(DRVOFF, OUTPUT);
-
-  pinMode(nFAULT_1, INPUT);
-  pinMode(nFAULT_2, INPUT);
-
-  pinMode(IPROPI_1, INPUT);
-  pinMode(IPROPI_2, INPUT);
-
-  digitalWrite(DRVOFF, LOW);
 
   // ##################### SPI CONFIG
   sensor.init(hspi);
@@ -107,15 +107,24 @@ void moveMotorsfun( void * pvParameters) {
   // power supply voltage [V]
   driver.voltage_power_supply = 19;
   // motor.motion_downsample = 2;
+  // printf("Driver1: %x \n", driver.driver1.getDeviceID());
+  // printf("Driver1 fault: %x \n", driver.driver1.getFault());
+  // printf("Driver1 config1: %x \n", driver.driver1.getConfig1().data);
+  // printf("Driver1 config2: %x \n", driver.driver1.getConfig2().data);
+  // printf("Driver1 config3: %x \n", driver.driver1.getConfig3().data);
+  // printf("Driver1 config4: %x \n", driver.driver1.getConfig4().data);
+
   driver.init();
+
   // link the motor to the sensor
   motor.linkDriver(&driver);
 
   // set control loop type to be used]
   
-  driver.pwm_frequency = 5000;
+  // driver.pwm_frequency = 5000;
   driver.voltage_limit = driver.voltage_power_supply / 2;
   motor.voltage_limit = driver.voltage_power_supply / 2;
+  
   // controller configuration based on the control type 
   motor.PID_velocity.P = 2;
   motor.PID_velocity.I = 20;
@@ -126,8 +135,12 @@ void moveMotorsfun( void * pvParameters) {
   motor.P_angle.P = 20;
   motor.P_angle.D = 0;
   // angle loop velocity limit
-  motor.velocity_limit = 15;
-
+  motor.velocity_limit = 5;
+  motor.current_limit = 5;
+  motor.phase_resistance = 0.9;
+  motor.phase_inductance = 0.00280;
+  
+  
   // use monitoring with serial for motor init
   // monitoring port
   
@@ -140,46 +153,32 @@ void moveMotorsfun( void * pvParameters) {
   motor.init();
   // align encoder and start FOC
   motor.initFOC();
+
+  printf("Driver2: %x \n", driver.driver2.getDeviceID());
+  printf("Driver2 fault: %x \n", driver.driver2.getFault());
+  printf("Driver2 config1: %x \n", driver.driver2.getConfig1().data);
+
     for(;;){
         //This function keeps motors spinning and must be run as fast as possible
         motor.move();
         motor.loopFOC();
     }
 }
-int monitor_downsample = 10000;
-int monitor_cnt = 0;
-int nfault_1 = 1;
-int nfault_2 = 1;
-float ipropi_1 = 0;
-float ipropi_2 = 0;
 
 void loop() {
   command.run();
   // motor.monitor();
-  if(motor.motor_status==FOCMotorStatus::motor_recover)
+  if((driver.driver1.getStatus1().status.FAULT || driver.driver2.getStatus1().status.FAULT) && !(driver.driver1.getStatus1().status.SPI_ERR || driver.driver2.getStatus1().status.SPI_ERR))
   {
-      driver.clear();
-      digitalWrite(DRVOFF, LOW);
-  }
-
-  if( !monitor_downsample || monitor_cnt++ < (monitor_downsample-1) ) 
-  { 
-      // printf("############################################# \n");
-  }
-  else{
-    monitor_cnt = 0; 
-    nfault_1 = digitalRead(nFAULT_1);
-    nfault_2 = digitalRead(nFAULT_2);
-    ipropi_1 = analogRead(IPROPI_1);
-    ipropi_2 = analogRead(IPROPI_2);
-    // printf("NFAULT_1 : %d NFAULT_2 : %d  STATUS: %i IPROP1: %f IPROP2: %f\n", nfault_1 , nfault_2, motor.motor_status,ipropi_1,ipropi_2);
-    if((!nfault_1 || !nfault_2) && motor.motor_status!=FOCMotorStatus::motor_error){
-      motor.motor_status==FOCMotorStatus::motor_error;
-      printf("FAULT!! NFAULT_1 : %d NFAULT_2 : %d \n", nfault_1 , nfault_2);
-      printf("Please enter CLEAR command to clear\n");
-      digitalWrite(DRVOFF, HIGH);
-      //motor.disable();
+    printf("MOTOR FAULT | M1 %x | M2 %x \n", driver.driver1.getStatus1().data, 
+    driver.driver2.getStatus1().data);
+    if(driver.driver1.getStatus1().status.TSD || driver.driver2.getStatus1().status.TSD){
+      printf("OVERTEMP!!! Waiting to cool down \n");
     }
+    else{
+      driver.clear();
+    }
+    
   }
   // canCommand.runWithCAN();
 }
